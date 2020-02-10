@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IJIS - 인제정보시스템(로그인)</title>
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__form">
+        <img src="./img/i_logo.png" class="form__logo" />
+        <form class="login">
+          <div class="login__text">로그인 하시려면 아래 정보를 입력하세요.</div>
+          <div class="input__form">
+            <div class="group">
+              <input type="text" class="user_id" id="user_id" required />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>아이디</label>
+            </div>
+            <div class="group">
+              <input
+                type="password"
+                class="user_password"
+                id="user_password"
+                required
+              />
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>비밀번호</label>
+            </div>
+          </div>
+          <div class="button__form">
+            <div class="login__button" onclick="saveInfo()">로그인</div>
+          </div>
+          <div class="help">
+            <ul class="help__lists">
+              <li class="help__list">
+                * 아이디 : 학생(학번), 교직원(사번)
+              </li>
+              <li class="help__list">
+                * 비밀번호 : 인제정보시스템의 비밀번호 입력
+              </li>
+              <li class="help__list">
+                * 비밀번호 변경 : [인제정보시스템] ->[개인정보변경]-> 비밀번호
+                변경
+              </li>
+              <li class="help__list">
+                * 비밀번호 초기화 희망시 본인 해당 학과사무실로 문의
+              </li>
+              <li class="help__list">
+                * 그 외 로그인 오류문의 : 인제대학교 학생취업처 055-320-3058
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./js/button.js"></script>
+  </body>
+</html>
