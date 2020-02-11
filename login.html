@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
+    <header class="header">
+      <span class="header__links">
+        <a href="https://www.inje.ac.kr/" class="link__text">인제대학교</a>
+        <a href="http://library.inje.ac.kr/" class="link__text"
+          >백인제기념도서관</a
+        >
+        <a href="https://webmail.inje.ac.kr/" class="link__text">웹메일</a>
+        <a href="https://113366.com/inje" class="link__text">원격지원</a>
+      </span>
+    </header>
     <main class="main">
       <div class="main__form">
         <img src="./img/i_logo.png" class="form__logo" />
@@ -33,25 +43,22 @@
             </div>
           </div>
           <div class="button__form">
-            <div class="login__button" onclick="saveInfo()">로그인</div>
+            <div class="login__button" onclick="checkLogin()">로그인</div>
+          </div>
+          <div class="links__form">
+            <span onclick="policy()" class="link__text">
+              개인정보보호정책
+            </span>
+            <span onclick="find()" class="link__text">ID/PW 찾기</span>
           </div>
           <div class="help">
             <ul class="help__lists">
               <li class="help__list">
-                * 아이디 : 학생(학번), 교직원(사번)
+                * 최초 학번이 초기 사용자 아이디 입니다
               </li>
               <li class="help__list">
-                * 비밀번호 : 인제정보시스템의 비밀번호 입력
-              </li>
-              <li class="help__list">
-                * 비밀번호 변경 : [인제정보시스템] ->[개인정보변경]-> 비밀번호
-                변경
-              </li>
-              <li class="help__list">
-                * 비밀번호 초기화 희망시 본인 해당 학과사무실로 문의
-              </li>
-              <li class="help__list">
-                * 그 외 로그인 오류문의 : 인제대학교 학생취업처 055-320-3058
+                * 대학, 대학원 모두 학적이 있는 경우 대학 학번이 초기 사용자
+                아이디 입니다
               </li>
             </ul>
           </div>

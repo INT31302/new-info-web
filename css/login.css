@@ -27,7 +27,29 @@ li {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: var(--secondColor);
+  background-color: var(--whiteColor);
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 5vh;
+}
+
+.header .header__links {
+  margin: auto 0;
+}
+
+.header__links .link__text:nth-child(-n + 3) {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header__links .link__text {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 3px;
 }
 
 .main {
@@ -38,7 +60,7 @@ body {
 
 .main .main__form {
   background-color: var(--greyColor);
-  margin-top: 100px;
+  margin-top: 50px;
   width: 460px;
   height: 600px;
   border-radius: 10px;
@@ -79,6 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
   width: 90%;
   height: 40px;
   font-size: 16px;
@@ -92,6 +115,22 @@ body {
   box-shadow: 0 3px 6px rgba(134, 121, 121, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.links__form {
+  text-align: center;
+}
+
+.links__form .link__text:nth-child(1) {
+  border-right: 1px solid var(--whiteColor);
+  padding-left: 0;
+}
+.links__form .link__text {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--whiteColor);
+  font-size: 14px;
+  padding: 0 20px;
+}
+
 .help {
   margin-top: 30px;
   margin-left: 8px;
@@ -100,4 +139,8 @@ body {
   font-size: 13px;
   list-style-type: none;
   margin: 2px 5px;
+}
+
+.help__lists .help__list:first-child {
+  margin-bottom: 5px;
 }
