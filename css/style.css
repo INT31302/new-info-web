@@ -26,13 +26,13 @@ body {
   justify-content: space-between;
   margin-left: 30px;
   margin-right: 30px;
-  height: 10vh;
+  height: 5vh;
   margin-bottom: 30px;
 }
 
 .header .img__logo {
   margin-top: 20px;
-  width: 8%;
+  width: 100px;
 }
 
 .header .header__links {
@@ -53,11 +53,11 @@ body {
 .main {
   display: grid;
   grid-template-columns: 0.1fr 0.9fr;
-  grid-template-rows: 90vh;
+  grid-template-rows: 80vh;
 }
 
 .main .side2 {
-  background-image: url(https://picsum.photos/1000/500);
+  background-image: url(https://picsum.photos/1000/400);
   background-position: center center;
   background-size: cover;
 }
